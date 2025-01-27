@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonance Reach</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(212, 175, 55, 0.3); 
+            color: #333;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        header img {
+            width: 100px;
+        }
+
+        header nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #d4af37;
+        }
+
+        .slideshow {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .slideshow video {
+            width: 100%;
+            display: block;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .performances {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .performance {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .performance:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .performance h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .contact a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: rgba(212, 175, 55, 0.3); 
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="Screenshot 2024-12-23 at 7.07.34 PM.png" alt="Resonance Reach Logo">
+            <nav>
+                <a href="#about">About</a>
+                <a href="#performances">Upcoming Performances</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="slideshow">
+        <video src="Nursing home performances .mp4" autoplay muted loop></video>
+        
+    </div>
+
+    <main>
+        <section id="about">
+            <h2>About Resonance Reach</h2>
+            <p>Resonance Reach is a Charitable Orgonization dedicated to bringing live music performances to nursing homes and retirement communities. We aim to create memorable experiences that uplift and inspire through the power of music as well as a great way to build confidence in the minds of young performers.</p>
+        </section>
+
+        <section id="performances">
+            <h2>Upcoming Performances</h2>
+            <div class="performances">
+                <div class="performance">
+                     <h3>Christmas</h3>
+                    <p><strong>Date:</strong> December 27, 2023</p>
+                    <p><strong>Location:</strong> Tribute at One Loudon</p>
+                    <p><strong>Highlights:</strong> Featuring piano and cello duets, including the "Fantasy Impromptu" by Chopin.</p>
+                </div>
+                <div class="performance">
+                    <h3>Christmas</h3>
+                    <p><strong>Date:</strong> December 27, 2023</p>
+                    <p><strong>Location:</strong> Tribute at One Loudon</p>
+                    <p><strong>Highlights:</strong> Featuring piano and cello duets, including the "Fantasy Impromptu" by Chopin.</p>
+                </div>
+                <div class="performance">
+                     <h3>Christmas</h3>
+                    <p><strong>Date:</strong> December 27, 2023</p>
+                    <p><strong>Location:</strong> Tribute at One Loudon</p>
+                    <p><strong>Highlights:</strong> Featuring piano and cello duets, including the "Fantasy Impromptu" by Chopin.</p>  
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you’d like to support our mission or learn more about our performances, please reach out to us at <a href="mailto:seanschwartzshs@gmail.com">seanschwartzshs@gmail.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Resonance Reach. All rights reserved. | <a href="#about">About</a> | <a href="#performances">Upcoming Performances</a> | <a href="#contact">Contact</a></p>
+    </footer>
+</body>
+</html>
